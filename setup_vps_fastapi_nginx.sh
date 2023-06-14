@@ -1,6 +1,3 @@
-# Intall Tino Script Vps
-curl -sO https://tinovps.com/tinovps-install && sh tinovps-install;
-
 # Install NodeJS and PM2
 yum install -y gcc-c++ make;
 curl -sL https://rpm.nodesource.com/setup_14.x | sudo -E bash -;
