@@ -1,6 +1,6 @@
 # Install NodeJS and PM2
 yum install -y gcc-c++ make;
-curl -sL https://rpm.nodesource.com/setup_14.x | sudo -E bash -;
+curl -sL "https://rpm.nodesource.com/setup_14.x" | sudo -E bash -;
 sudo yum install -y nodejs; npm i -g pm2;
 
 # Open Port 80, 443
@@ -14,7 +14,7 @@ service iptables restart;
 
 # Install Python3.7.9
 sudo yum -y install wget make gcc openssl-devel bzip2-devel;
-wget https://www.python.org/ftp/python/3.7.9/Python-3.7.9.tgz;
+wget "https://www.python.org/ftp/python/3.7.9/Python-3.7.9.tgz";
 tar xzf Python-3.7.9.tgz;
 cd Python-3.7.9;
 ./configure --enable-optimizations;
