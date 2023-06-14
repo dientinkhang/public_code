@@ -1,14 +1,17 @@
+# Intall Tino Script Vps
+curl -sO https://tinovps.com/tinovps-install && sh tinovps-install;
+
 # Install NodeJS and PM2
 yum install -y gcc-c++ make;
 curl -sL https://rpm.nodesource.com/setup_14.x | sudo -E bash -;
 sudo yum install -y nodejs; npm i -g pm2;
 
 # Install Nginx
-sudo yum install -y epel-release;
-sudo yum install -y nginx;
-sudo systemctl start nginx;
-sudo systemctl enable nginx;
-sudo systemctl status nginx;
+#sudo yum install -y epel-release;
+#sudo yum install -y nginx;
+#sudo systemctl start nginx;
+#sudo systemctl enable nginx;
+#sudo systemctl status nginx;
 
 # Open Port 80, 443
 systemctl stop firewalld;
